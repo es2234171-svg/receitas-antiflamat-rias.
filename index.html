@@ -160,13 +160,20 @@
     }
 
     .kit-hero__headline .kit-text-gradient-blue {
-      background: linear-gradient(135deg, #f5ffd8 0%, #b7ff62 42%, #38ef7d 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
+      display: inline-block;
+      padding: 0.02em 0.16em 0.08em;
+      border-radius: 8px;
+      background:
+        radial-gradient(circle at 24% 0%, rgba(255, 255, 255, 0.5), transparent 34%),
+        linear-gradient(135deg, #b7ff62 0%, #38ef7d 100%);
       text-shadow:
-        0 2px 2px rgba(1, 10, 5, 0.95),
-        0 8px 24px rgba(1, 10, 5, 0.75),
-        0 0 30px rgba(183, 255, 98, 0.34);
+        0 2px 2px rgba(1, 10, 5, 0.72),
+        0 8px 20px rgba(1, 10, 5, 0.38);
+      color: #ffffff;
+      -webkit-text-fill-color: #ffffff;
+      box-shadow:
+        0 0 28px rgba(183, 255, 98, 0.42),
+        0 14px 34px rgba(56, 239, 125, 0.22);
     }
 
     .kit-hero__description {
